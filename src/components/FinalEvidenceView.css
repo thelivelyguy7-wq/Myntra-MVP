@@ -32,7 +32,7 @@
   display: block; margin: var(--spacing-2) 0 var(--spacing-4) 0;
 }
 .evidence-ai-box-large {
-  background: #fdf2f8; 
+  background: var(--color-brand-light-bg); 
   border-left: 4px solid var(--color-brand);
   padding: var(--spacing-4);
   border-radius: 0 var(--radius-md) var(--radius-md) 0;

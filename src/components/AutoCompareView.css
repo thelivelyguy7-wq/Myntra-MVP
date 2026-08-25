@@ -58,7 +58,7 @@
 }
 
 .tradeoffs-banner {
-  background: linear-gradient(90deg, #fff 0%, #fdf2f8 100%);
+  background: linear-gradient(90deg, var(--color-surface) 0%, var(--color-brand-light-bg) 100%);
   border: 1px solid var(--color-brand);
   border-radius: var(--radius-md);
   padding: var(--spacing-6);
@@ -92,7 +92,7 @@
 }
 .best-pick-callout {
   margin-top: var(--spacing-4);
-  background: white;
+  background: var(--color-surface);
   border: 1px solid var(--color-brand);
   padding: var(--spacing-3);
   border-radius: var(--radius-md);
