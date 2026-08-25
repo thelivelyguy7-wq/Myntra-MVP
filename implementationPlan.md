@@ -39,3 +39,8 @@
 - [x] **Trade-offs Banner**: Restyle the AI Trade-offs list with bullets, pink bolded brand names, and proper spacing.
 - [x] **Final CTA**: Convert "Move to Bag" to "ADD TO BAG" with a `ShoppingBag` icon on the final page.
 - [x] **Price Display**: Removed the strikethrough original price from the PDP to present a cleaner interface.
+
+## Phase 8: Deployment & Theme Support (Completed)
+- [x] **Vercel Configuration**: Created `vercel.json` to explicitly configure the Vite build output directory (`dist`) and fix 404 deployment errors.
+- [x] **Dark Mode Fix**: Re-enabled system-level Dark Mode support.
+- [x] **Semantic Variables**: Converted hardcoded light-pink banner backgrounds (`#fdf2f8`, `#fff`) to semantic CSS variables (`--color-brand-light-bg`, `--color-surface`) to adapt dynamically to dark mode without losing text contrast.

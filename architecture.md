@@ -35,7 +35,12 @@ The application will run on mock data injected into the application state at run
 ## 4. UI/UX & Styling
 - **Design Language**: Follows Myntra's flat, clean aesthetic. Uses sharp borders (`4px` radius), flat drop shadows, and clean typography.
 - **Brand Colors**: Heavily utilizes Myntra's iconic pink (`#ff3f6c`) for key AI highlights, typography accents, and main CTAs.
+- **Dynamic Theming (Light/Dark Mode)**: Fully responsive to the user's OS color scheme. Uses semantic CSS variables (e.g., `--color-brand-light-bg`) to gracefully transition the pink highlight banners into a deeper burgundy tint when in dark mode to ensure perfect text contrast.
 - **Navigation**: Clean headers with a simple `< ChevronLeft Back` button across all steps.
+
+## 5. Deployment
+- **Platform**: Vercel
+- **Configuration**: Uses a `vercel.json` file at the root to explicitly define the framework (`vite`), build command (`npm run build`), and output directory (`dist`) to ensure smooth CI/CD deployments.
 
 ## 5. Event Tracking Architecture (Analytics)
 A mock `Logger` utility (`trackEvent`) will simulate a data pipeline.
