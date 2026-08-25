@@ -1,0 +1,116 @@
+.evidence-modal-overlay {
+  position: fixed;
+  top: 0; left: 0; width: 100vw; height: 100vh;
+  background: rgba(0,0,0,0.5);
+  backdrop-filter: blur(4px);
+  display: flex; justify-content: center; align-items: center;
+  z-index: 100;
+  animation: fadeIn 0.2s ease-out;
+}
+
+.evidence-modal {
+  background: var(--color-surface);
+  width: 90%; max-width: 500px;
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-lg);
+  overflow: hidden;
+  animation: slideInUp 0.3s ease-out;
+}
+
+.evidence-modal-header {
+  padding: var(--spacing-4) var(--spacing-6);
+  border-bottom: 1px solid var(--color-border);
+  display: flex; justify-content: space-between; align-items: center;
+}
+
+.header-title-ai {
+  display: flex; align-items: center; gap: var(--spacing-2);
+}
+
+.header-title-ai h2 {
+  font-size: 1.1rem;
+}
+
+.evidence-content {
+  padding: var(--spacing-6);
+}
+
+.evidence-product-info {
+  display: flex; gap: var(--spacing-4); margin-bottom: var(--spacing-6);
+}
+
+.evidence-img {
+  width: 80px; height: 80px; object-fit: cover; border-radius: var(--radius-md);
+}
+
+.price-tag {
+  font-weight: 700; font-size: 1.1rem; color: var(--color-text-primary); margin-top: var(--spacing-1);
+}
+
+.evidence-ai-box {
+  background: #fdf2f8; 
+  border-left: 4px solid var(--color-brand);
+  padding: var(--spacing-4);
+  border-radius: 0 var(--radius-md) var(--radius-md) 0;
+}
+
+.ai-text {
+  font-size: 0.95rem; color: var(--color-text-primary); line-height: 1.6;
+}
+
+.evidence-actions {
+  padding: var(--spacing-4) var(--spacing-6);
+  border-top: 1px solid var(--color-border);
+  background: var(--color-bg);
+}
+
+.btn-primary-action {
+  width: 100%; display: flex; justify-content: center; align-items: center; gap: var(--spacing-2);
+  padding: var(--spacing-3); background: var(--color-brand); color: white;
+  border-radius: var(--radius-md); font-weight: 600; font-size: 1rem;
+  border: none; cursor: pointer; transition: background 0.2s;
+}
+.btn-primary-action:hover { background: var(--color-brand-hover); }
+
+/* Help Me Decide Button (App.css addition) */
+.help-me-decide-banner {
+  background: linear-gradient(90deg, #fdf2f8 0%, #fff 100%);
+  border: 1px solid var(--color-brand);
+  border-radius: var(--radius-lg);
+  padding: var(--spacing-4) var(--spacing-6);
+  margin-bottom: var(--spacing-6);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: var(--shadow-sm);
+}
+
+.hmd-content h3 {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-2);
+  color: var(--color-brand);
+  margin-bottom: 4px;
+}
+
+.hmd-content p {
+  color: var(--color-text-secondary);
+  font-size: 0.9rem;
+}
+
+.btn-hmd {
+  background: var(--color-brand);
+  color: white;
+  padding: var(--spacing-2) var(--spacing-4);
+  border-radius: var(--radius-full);
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-2);
+  transition: all 0.2s;
+}
+
+.btn-hmd:hover {
+  background: var(--color-brand-hover);
+  transform: scale(1.02);
+}

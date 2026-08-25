@@ -1,0 +1,111 @@
+.auto-compare-view {
+  padding: var(--spacing-6);
+  max-width: 800px;
+  margin: 0 auto;
+}
+.compare-header {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-4);
+  margin-bottom: var(--spacing-4);
+}
+.compare-header h2 { margin: 0; }
+.btn-back {
+  display: flex; align-items: center; gap: 4px;
+  background: none; border: none; cursor: pointer;
+  color: var(--color-text-secondary); font-weight: 600; font-size: 1rem;
+}
+.btn-back:hover { color: var(--color-brand); }
+
+.compare-list {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-4);
+}
+.compare-list-item {
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  display: flex;
+  align-items: center;
+  padding: var(--spacing-3);
+  gap: var(--spacing-4);
+  cursor: pointer;
+  transition: box-shadow 0.2s, transform 0.2s;
+}
+.compare-list-item:hover {
+  transform: translateY(-2px);
+  border-color: var(--color-brand);
+}
+.compare-list-item img {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  border-radius: var(--radius-sm);
+}
+.compare-item-info {
+  flex: 1;
+}
+.compare-item-info h4 {
+  margin: 0; font-size: 0.95rem;
+}
+.compare-item-info p {
+  margin: 2px 0 6px 0; color: var(--color-text-secondary); font-size: 0.85rem;
+}
+.select-action {
+  display: flex; align-items: center; gap: 4px;
+  color: var(--color-brand); font-weight: 600; font-size: 0.9rem;
+}
+
+.tradeoffs-banner {
+  background: linear-gradient(90deg, #fff 0%, #fdf2f8 100%);
+  border: 1px solid var(--color-brand);
+  border-radius: var(--radius-md);
+  padding: var(--spacing-6);
+  margin-bottom: var(--spacing-8);
+}
+.tradeoffs-header {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-2);
+  margin-bottom: var(--spacing-4);
+}
+.tradeoffs-header h3 {
+  color: var(--color-brand);
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin: 0;
+}
+.tradeoffs-list {
+  list-style-type: disc;
+  margin: 0 0 var(--spacing-4) var(--spacing-6);
+  padding: 0;
+}
+.tradeoffs-list li {
+  margin-bottom: var(--spacing-2);
+  font-size: 1rem;
+  line-height: 1.5;
+  color: var(--color-text-primary);
+}
+.tradeoffs-list li strong {
+  color: var(--color-brand);
+}
+.best-pick-callout {
+  margin-top: var(--spacing-4);
+  background: white;
+  border: 1px solid var(--color-brand);
+  padding: var(--spacing-3);
+  border-radius: var(--radius-md);
+  font-size: 1rem;
+  color: var(--color-text-primary);
+}
+.bp-badge {
+  background: var(--color-brand);
+  color: white;
+  padding: 2px 8px;
+  border-radius: 4px;
+  font-weight: 700;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  margin-right: 8px;
+}

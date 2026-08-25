@@ -1,0 +1,72 @@
+.final-evidence-view {
+  padding: var(--spacing-6);
+  max-width: 800px;
+  margin: 0 auto;
+}
+.final-header {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-4);
+  margin-bottom: var(--spacing-6);
+}
+.btn-back {
+  display: flex; align-items: center; gap: 4px;
+  background: none; border: none; cursor: pointer;
+  color: var(--color-text-secondary); font-weight: 600; font-size: 1rem;
+}
+.btn-back:hover { color: var(--color-brand); }
+.evidence-product-card {
+  display: flex; gap: var(--spacing-6);
+  margin-bottom: var(--spacing-6);
+}
+.evidence-main-img {
+  width: 40%;
+  object-fit: cover;
+  border-radius: var(--radius-lg);
+}
+.evidence-right {
+  flex: 1;
+}
+.price-large {
+  font-size: 1.5rem; font-weight: 700; color: var(--color-text-primary);
+  display: block; margin: var(--spacing-2) 0 var(--spacing-4) 0;
+}
+.evidence-ai-box-large {
+  background: #fdf2f8; 
+  border-left: 4px solid var(--color-brand);
+  padding: var(--spacing-4);
+  border-radius: 0 var(--radius-md) var(--radius-md) 0;
+}
+.ai-box-header {
+  display: flex; align-items: center; gap: var(--spacing-2);
+  color: var(--color-brand); font-weight: 600; margin-bottom: var(--spacing-2);
+}
+.stats-matrix {
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  margin-bottom: var(--spacing-6);
+}
+.stat-row {
+  display: flex;
+  border-bottom: 1px solid var(--color-border);
+  padding: var(--spacing-4);
+}
+.stat-row:last-child { border-bottom: none; }
+.stat-label {
+  flex: 0 0 200px; color: var(--color-text-secondary); font-weight: 600;
+}
+.stat-value {
+  flex: 1; display: flex; gap: var(--spacing-2); align-items: center; flex-wrap: wrap;
+}
+.rating-val-green { color: var(--color-success); font-weight: 600; display:flex; align-items:center; gap:4px; }
+.delivery-fast { color: var(--color-success); font-weight: 600; }
+.final-actions {
+  display: flex; justify-content: flex-end; margin-top: var(--spacing-6);
+}
+.btn-add-cart-primary {
+  background: var(--color-brand); color: white; border: none; padding: 16px 32px; border-radius: 4px;
+  font-weight: 700; font-size: 1rem; cursor: pointer; display: flex; align-items: center; justify-content: center;
+}
+.btn-add-cart-primary:hover {
+  background: var(--color-brand-hover);
+}
