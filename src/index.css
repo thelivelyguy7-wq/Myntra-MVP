@@ -37,18 +37,6 @@
   --spacing-8: 2rem;
 }
 
-/* Dark Mode Support */
-@media (prefers-color-scheme: dark) {
-  :root {
-    --color-bg: #121212;
-    --color-surface: #1e1e1e;
-    --color-text-primary: #f5f5f5;
-    --color-text-secondary: #a0a0a0;
-    --color-border: #333333;
-    --color-success-bg: #064e3b;
-  }
-}
-
 * {
   box-sizing: border-box;
   margin: 0;
