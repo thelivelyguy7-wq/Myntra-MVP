@@ -38,3 +38,4 @@
 - [x] **Layout Cleanup**: Remove redundant headers ("Your Saved Item", "Help Me Decide", "Product Details") across all pages in favor of clean `< Back` navigation.
 - [x] **Trade-offs Banner**: Restyle the AI Trade-offs list with bullets, pink bolded brand names, and proper spacing.
 - [x] **Final CTA**: Convert "Move to Bag" to "ADD TO BAG" with a `ShoppingBag` icon on the final page.
+- [x] **Price Display**: Removed the strikethrough original price from the PDP to present a cleaner interface.

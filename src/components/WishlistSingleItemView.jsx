@@ -33,7 +33,6 @@ export default function WishlistSingleItemView({ product, onHelpMeDecide }) {
           <h1>{product.name}</h1>
           <div className="price-row">
             <span className="price">₹{product.price}</span>
-            <span className="original-price">₹{product.originalPrice}</span>
           </div>
           <div className="rating-row">
             <Star size={16} color="var(--color-success)" fill="var(--color-success)" />

@@ -28,7 +28,7 @@ The application will run on mock data injected into the application state at run
 ## 3.3. Component Structure
 1.  **`App`**: The root container acting as a router for the 3 steps.
 2.  **`Header`**: Base UI. 
-3.  **`WishlistSingleItemView` (Step 1)**: Renders a single product resembling a full Myntra Product Details Page (PDP). Includes product images, pricing, colors, size selector, specifications grid, and the "Help Me Decide" button at the top right. (Clean header with just a back button).
+3.  **`WishlistSingleItemView` (Step 1)**: Renders a single product resembling a full Myntra Product Details Page (PDP). Includes product images, final pricing (original strikethrough price removed for clarity), colors, size selector, specifications grid, and the "Help Me Decide" button at the top right. (Clean header with just a back button).
 4.  **`AutoCompareView` (Step 2)**: Automatically populated with 5 items. Displays a styled "AI Trade-offs & Best Pick" banner with bullet points highlighting each brand in Myntra pink. Clicking an item selects it.
 5.  **`FinalEvidenceView` (Step 3)**: Renders the selected product. Shows the AI Evidence Summary, detailed attribute matrix (Signals, Rating, Material, Fit, Delivery), and the final "ADD TO BAG" CTA with a shopping bag icon.
 
