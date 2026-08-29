@@ -18,11 +18,7 @@ export default function AutoCompareView({ items, onProductSelect, onBack }) {
 
       <div className="tradeoffs-banner">
         <div className="tradeoffs-content">
-          <ul className="tradeoffs-list">
-            {items.map(item => (
-              <li key={item.id}><strong>{item.brand}:</strong> {item.aiTradeOffs}</li>
-            ))}
-          </ul>
+
           <div className="best-pick-callout">
             <span className="bp-badge">Best Pick</span>
             <strong>{bestPick.brand} {bestPick.name}</strong> (Highest overall rating of {bestPick.rating})
@@ -38,6 +34,12 @@ export default function AutoCompareView({ items, onProductSelect, onBack }) {
               <h4>{item.brand}</h4>
               <p>{item.name}</p>
               <span className="price">₹{item.price}</span>
+              <div className="ai-tradeoff-container">
+                <div className="ai-insight-label">
+                  <Sparkles size={14} className="ai-icon" /> AI Analysis
+                </div>
+                <p className="item-tradeoff">{item.aiTradeOffs}</p>
+              </div>
             </div>
             <div className="select-action">
               View Details <ChevronRight size={16} />
