@@ -59,10 +59,21 @@
 
 body {
   font-family: var(--font-family);
-  background-color: var(--color-bg);
+  background-color: #e0e0e0; /* Darker background so the white app frame stands out */
   color: var(--color-text-primary);
   line-height: 1.5;
   -webkit-font-smoothing: antialiased;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+}
+
+@media (prefers-color-scheme: dark) {
+  body {
+    background-color: #000;
+  }
 }
 
 button {

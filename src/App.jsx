@@ -5,6 +5,7 @@ import Header from './components/Header';
 import WishlistSingleItemView from './components/WishlistSingleItemView';
 import AutoCompareView from './components/AutoCompareView';
 import FinalEvidenceView from './components/FinalEvidenceView';
+import CheckoutView from './components/CheckoutView';
 import { trackEvent } from './utils/analytics';
 
 function App() {
@@ -24,8 +25,13 @@ function App() {
 
   const handleMoveToBag = (product) => {
     trackEvent('add_to_cart_clicked', { productId: product.id });
+    setCurrentFlowStep('CHECKOUT');
+  };
+
+  const handlePlaceOrder = (product) => {
     trackEvent('purchase_completed', { productId: product.id });
-    alert(`${product.name} added to bag and purchase completed!`);
+    alert(`Order placed for ${product.name}!`);
+    setCurrentFlowStep('SINGLE_ITEM');
   };
 
   return (
@@ -52,6 +58,14 @@ function App() {
             product={selectedProduct} 
             onMoveToBag={handleMoveToBag}
             onBack={() => setCurrentFlowStep('COMPARE')}
+          />
+        )}
+
+        {currentFlowStep === 'CHECKOUT' && selectedProduct && (
+          <CheckoutView 
+            product={selectedProduct} 
+            onPlaceOrder={handlePlaceOrder}
+            onBack={() => setCurrentFlowStep('EVIDENCE')}
           />
         )}
       </main>

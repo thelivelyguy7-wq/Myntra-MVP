@@ -73,6 +73,40 @@ export const mockProducts = [
     rating: 4.1,
     reviewCount: 1530,
     image: "https://images.unsplash.com/photo-1608231387042-66d1773070a5?q=80&w=600&auto=format&fit=crop",
+    colors: [
+      "https://images.unsplash.com/photo-1608231387042-66d1773070a5?q=80&w=600&auto=format&fit=crop",
+      "https://images.unsplash.com/photo-1549298916-b41d501d3772?q=80&w=600&auto=format&fit=crop",
+      "https://images.unsplash.com/photo-1587563871167-1ee9c731aefb?q=80&w=600&auto=format&fit=crop"
+    ],
+    sizes: [
+      { size: "6", available: true },
+      { size: "7", available: false },
+      { size: "8", available: true },
+      { size: "9", available: true },
+      { size: "10", available: true }
+    ],
+    features: [
+      "Slip-on construction for easy on and off",
+      "Lightweight midsole for supreme cushioning"
+    ],
+    details: {
+      "Width": "Regular",
+      "Toe Type": "Rounded",
+      "Fastener": "Slip-on",
+      "Main material of upper": "Mesh",
+      "Cushioning": "High"
+    },
+    materialCare: {
+      "Upper Material": "Mesh",
+      "Sole Material": "EVA",
+      "Care": "Wipe with a clean, dry cloth to remove dust"
+    },
+    specifications: {
+      "Sport": "Lifestyle",
+      "Fastening": "Slip-On",
+      "Ankle Height": "Regular",
+      "Outsole Type": "Non-Marking"
+    },
     attributes: {
       material: "Mesh",
       fit: "Snug",
@@ -91,6 +125,41 @@ export const mockProducts = [
     rating: 4.6,
     reviewCount: 8900,
     image: "https://images.unsplash.com/photo-1607522370275-f14206abe5d3?q=80&w=600&auto=format&fit=crop",
+    colors: [
+      "https://images.unsplash.com/photo-1607522370275-f14206abe5d3?q=80&w=600&auto=format&fit=crop",
+      "https://images.unsplash.com/photo-1525966222134-fcfa99b8ae77?q=80&w=600&auto=format&fit=crop"
+    ],
+    sizes: [
+      { size: "5", available: true },
+      { size: "6", available: true },
+      { size: "7", available: true },
+      { size: "8", available: false },
+      { size: "9", available: true },
+      { size: "10", available: true }
+    ],
+    features: [
+      "Classic canvas upper for lightweight, flexible comfort",
+      "Vulcanized rubber sole for durability",
+      "Medial eyelets enhance airflow"
+    ],
+    details: {
+      "Width": "Narrow",
+      "Toe Type": "Rubber Toe Cap",
+      "Fastener": "Laces",
+      "Main material of upper": "Canvas",
+      "Cushioning": "Low"
+    },
+    materialCare: {
+      "Upper Material": "Canvas",
+      "Sole Material": "Rubber",
+      "Care": "Machine wash cold, air dry"
+    },
+    specifications: {
+      "Sport": "Casual",
+      "Fastening": "Lace-Ups",
+      "Ankle Height": "High-Top",
+      "Outsole Type": "Textured"
+    },
     attributes: {
       material: "Canvas",
       fit: "Narrow",
@@ -109,6 +178,41 @@ export const mockProducts = [
     rating: 4.7,
     reviewCount: 512,
     image: "https://images.unsplash.com/photo-1587563871167-1ee9c731aefb?q=80&w=600&auto=format&fit=crop",
+    colors: [
+      "https://images.unsplash.com/photo-1587563871167-1ee9c731aefb?q=80&w=600&auto=format&fit=crop",
+      "https://images.unsplash.com/photo-1549298916-b41d501d3772?q=80&w=600&auto=format&fit=crop"
+    ],
+    sizes: [
+      { size: "7", available: true },
+      { size: "8", available: true },
+      { size: "9", available: false },
+      { size: "10", available: true },
+      { size: "11", available: true }
+    ],
+    features: [
+      "Lightest Ultraboost ever made",
+      "Linear Energy Push system for more responsiveness",
+      "Continental™ Rubber outsole for extraordinary traction"
+    ],
+    details: {
+      "Width": "Regular",
+      "Toe Type": "Rounded",
+      "Fastener": "Laces",
+      "Main material of upper": "Primeknit",
+      "Cushioning": "Maximum"
+    },
+    materialCare: {
+      "Upper Material": "Textile/Synthetic",
+      "Sole Material": "Rubber",
+      "Care": "Clean with a soft damp cloth"
+    },
+    specifications: {
+      "Sport": "Running",
+      "Fastening": "Lace-Ups",
+      "Ankle Height": "Regular",
+      "Arch Type": "Medium",
+      "Pronation": "Neutral"
+    },
     attributes: {
       material: "Primeknit",
       fit: "Regular",
@@ -127,6 +231,40 @@ export const mockProducts = [
     rating: 4.5,
     reviewCount: 2200,
     image: "https://images.unsplash.com/photo-1539185441755-769473a23570?q=80&w=600&auto=format&fit=crop",
+    colors: [
+      "https://images.unsplash.com/photo-1539185441755-769473a23570?q=80&w=600&auto=format&fit=crop",
+      "https://images.unsplash.com/photo-1608231387042-66d1773070a5?q=80&w=600&auto=format&fit=crop"
+    ],
+    sizes: [
+      { size: "6", available: true },
+      { size: "7", available: true },
+      { size: "8", available: true },
+      { size: "9", available: true },
+      { size: "10", available: false },
+      { size: "11", available: true }
+    ],
+    features: [
+      "ENCAP midsole cushioning combines lightweight foam with a durable polyurethane rim",
+      "Suede and mesh upper for premium feel and breathability"
+    ],
+    details: {
+      "Width": "Wide Available",
+      "Toe Type": "Rounded",
+      "Fastener": "Laces",
+      "Main material of upper": "Suede/Mesh",
+      "Cushioning": "Medium"
+    },
+    materialCare: {
+      "Upper Material": "Suede",
+      "Sole Material": "Rubber",
+      "Care": "Use a suede brush to gently remove dirt"
+    },
+    specifications: {
+      "Sport": "Lifestyle",
+      "Fastening": "Lace-Ups",
+      "Ankle Height": "Regular",
+      "Outsole Type": "Durable Rubber"
+    },
     attributes: {
       material: "Suede/Mesh",
       fit: "Wide Available",
@@ -145,6 +283,41 @@ export const mockProducts = [
     rating: 4.7,
     reviewCount: 6500,
     image: "https://images.unsplash.com/photo-1525966222134-fcfa99b8ae77?q=80&w=600&auto=format&fit=crop",
+    colors: [
+      "https://images.unsplash.com/photo-1525966222134-fcfa99b8ae77?q=80&w=600&auto=format&fit=crop",
+      "https://images.unsplash.com/photo-1607522370275-f14206abe5d3?q=80&w=600&auto=format&fit=crop"
+    ],
+    sizes: [
+      { size: "5", available: true },
+      { size: "6", available: true },
+      { size: "7", available: false },
+      { size: "8", available: true },
+      { size: "9", available: true },
+      { size: "10", available: true }
+    ],
+    features: [
+      "Iconic Vans side stripe",
+      "Reinforced toe caps to withstand repeated wear",
+      "Signature rubber waffle outsoles"
+    ],
+    details: {
+      "Width": "Regular",
+      "Toe Type": "Rounded",
+      "Fastener": "Laces",
+      "Main material of upper": "Suede/Canvas",
+      "Cushioning": "Low"
+    },
+    materialCare: {
+      "Upper Material": "Canvas/Suede",
+      "Sole Material": "Rubber",
+      "Care": "Spot clean with mild soap and water"
+    },
+    specifications: {
+      "Sport": "Skateboarding",
+      "Fastening": "Lace-Ups",
+      "Ankle Height": "Low-Top",
+      "Outsole Type": "Waffle Rubber"
+    },
     attributes: {
       material: "Suede/Canvas",
       fit: "Regular",

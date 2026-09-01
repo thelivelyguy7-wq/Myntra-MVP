@@ -14,13 +14,8 @@ export default function WishlistSingleItemView({ product, onHelpMeDecide }) {
 
   return (
     <div className="single-item-container">
-      <div className="single-item-header">
-        <div className="header-left-group">
-          <button className="btn-back" onClick={() => {}}><ChevronLeft size={20}/> Back</button>
-        </div>
-        <button className="btn-hmd-top-right" onClick={() => onHelpMeDecide()}>
-          <Sparkles size={20} /> Help Me Decide
-        </button>
+      <div className="single-item-header" style={{ padding: '16px 16px 0 16px' }}>
+        <button className="btn-back" onClick={() => {}}><ChevronLeft size={20} /> Back</button>
       </div>
       
       <div className="pdp-main">
@@ -29,25 +24,31 @@ export default function WishlistSingleItemView({ product, onHelpMeDecide }) {
         </div>
         
         <div className="pdp-info-col">
+          <div className="pdp-actions">
+            <button className="btn-add-to-bag">
+              <ShoppingBag size={18} /> ADD TO BAG
+            </button>
+            <button className="btn-wishlist">
+              <Zap size={18} /> BUY NOW
+            </button>
+          </div>
+
           <h3>{product.brand}</h3>
           <h1>{product.name}</h1>
           <div className="price-row">
             <span className="price">₹{product.price}</span>
           </div>
+
+          <button className="btn-hmd-top-right" onClick={() => onHelpMeDecide()}>
+            <Sparkles size={20} /> Help Me Decide
+          </button>
           <div className="rating-row">
             <Star size={16} color="var(--color-success)" fill="var(--color-success)" />
             <span className="rating-val">{product.rating}</span>
             <span className="review-count">({product.reviewCount} Reviews)</span>
           </div>
 
-          <div className="colors-section">
-            <h4>MORE COLORS</h4>
-            <div className="color-thumbnails">
-              {product.colors && product.colors.map((colorImg, idx) => (
-                <img key={idx} src={colorImg} alt={`Color ${idx+1}`} className={`color-thumb ${idx===0 ? 'active' : ''}`} />
-              ))}
-            </div>
-          </div>
+
 
           <div className="sizes-section">
             <div className="sizes-header">
@@ -68,14 +69,7 @@ export default function WishlistSingleItemView({ product, onHelpMeDecide }) {
             </div>
           </div>
 
-          <div className="pdp-actions">
-            <button className="btn-add-to-bag">
-              <ShoppingBag size={18} /> ADD TO BAG
-            </button>
-            <button className="btn-wishlist">
-              <Zap size={18} /> BUY NOW
-            </button>
-          </div>
+
         </div>
       </div>
 

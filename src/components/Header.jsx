@@ -1,15 +1,17 @@
 import React from 'react';
-import { Heart } from 'lucide-react';
+import { Heart, ShoppingBag } from 'lucide-react';
+import './Header.css';
 
 export default function Header() {
   return (
     <header className="header">
-      <div className="header-logo">
-        <span className="myntra-brand">Myntra</span>
+      <div className="header-left">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/b/bc/Myntra_Logo.png" alt="Myntra Logo" className="myntra-logo-img" />
+        <span className="myntra-brand">Wishlist</span>
       </div>
-      <div className="header-title">
-        <Heart size={18} color="var(--color-brand)" fill="var(--color-brand)" />
-        <h2>My Wishlist</h2>
+      <div className="header-right">
+        <Heart size={20} className="header-icon" fill="var(--color-brand)" color="var(--color-brand)" />
+        <ShoppingBag size={20} className="header-icon" />
       </div>
     </header>
   );
