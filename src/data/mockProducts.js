@@ -106,7 +106,7 @@ export const mockProducts = [
     brand: "Adidas",
     price: 13599,
     originalPrice: 16999,
-    rating: 4.9,
+    rating: 4.7,
     reviewCount: 512,
     image: "https://images.unsplash.com/photo-1587563871167-1ee9c731aefb?q=80&w=600&auto=format&fit=crop",
     attributes: {
@@ -115,7 +115,7 @@ export const mockProducts = [
       delivery: "4 Days"
     },
     decisionSignals: ["Premium Choice", "High Performance"],
-    aiEvidence: "The Ultraboost Light is the ultimate performance shoe with a near-perfect 4.9 rating. Its Primeknit upper and advanced cushioning provide unmatched comfort for running and walking.",
+    aiEvidence: "The Ultraboost Light is the ultimate performance shoe with a strong 4.7 rating. Its Primeknit upper and advanced cushioning provide unmatched comfort for running and walking.",
     aiTradeOffs: "Highest performance and rating, but is the most expensive option."
   },
   {

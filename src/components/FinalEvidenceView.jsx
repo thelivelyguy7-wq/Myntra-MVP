@@ -63,6 +63,9 @@ export default function FinalEvidenceView({ product, onMoveToBag, onBack }) {
          <button className="btn-add-cart-primary" onClick={() => onMoveToBag(product)}>
            <ShoppingBag size={18} style={{marginRight: '8px'}} /> ADD TO BAG
          </button>
+         <button className="btn-buy-now">
+           <Zap size={18} style={{marginRight: '8px'}} /> BUY NOW
+         </button>
       </div>
     </div>
   );

@@ -13,14 +13,14 @@ export default function AutoCompareView({ items, onProductSelect, onBack }) {
   return (
     <div className="auto-compare-view">
       <div className="compare-header">
-        <button className="btn-back" onClick={onBack}><ChevronLeft size={20}/> Back</button>
+        <button className="btn-back" onClick={onBack}><ChevronLeft size={20} /> Back</button>
       </div>
 
       <div className="tradeoffs-banner">
         <div className="tradeoffs-content">
 
           <div className="best-pick-callout">
-            <span className="bp-badge">Best Pick</span>
+            <span className="bp-badge">MY PICK</span>
             <strong>{bestPick.brand} {bestPick.name}</strong> (Highest overall rating of {bestPick.rating})
           </div>
         </div>
@@ -35,9 +35,6 @@ export default function AutoCompareView({ items, onProductSelect, onBack }) {
               <p>{item.name}</p>
               <span className="price">₹{item.price}</span>
               <div className="ai-tradeoff-container">
-                <div className="ai-insight-label">
-                  <Sparkles size={14} className="ai-icon" /> AI Analysis
-                </div>
                 <p className="item-tradeoff">{item.aiTradeOffs}</p>
               </div>
             </div>

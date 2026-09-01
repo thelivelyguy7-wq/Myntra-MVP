@@ -61,7 +61,7 @@
 .rating-val-green { color: var(--color-success); font-weight: 600; display:flex; align-items:center; gap:4px; }
 .delivery-fast { color: var(--color-success); font-weight: 600; }
 .final-actions {
-  display: flex; justify-content: flex-end; margin-top: var(--spacing-6);
+  display: flex; justify-content: flex-end; gap: var(--spacing-4); margin-top: var(--spacing-6);
 }
 .btn-add-cart-primary {
   background: var(--color-brand); color: white; border: none; padding: 16px 32px; border-radius: 4px;
@@ -69,4 +69,11 @@
 }
 .btn-add-cart-primary:hover {
   background: var(--color-brand-hover);
+}
+.btn-buy-now {
+  background: var(--color-surface); color: var(--color-text-primary); border: 1px solid var(--color-border); padding: 16px 32px; border-radius: 4px;
+  font-weight: 700; font-size: 1rem; cursor: pointer; display: flex; align-items: center; justify-content: center;
+}
+.btn-buy-now:hover {
+  border-color: var(--color-text-primary);
 }

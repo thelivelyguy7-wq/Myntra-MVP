@@ -66,12 +66,13 @@
 .size-buttons { display: flex; flex-wrap: wrap; gap: var(--spacing-3); margin-bottom: var(--spacing-8); }
 .size-btn {
   width: 50px; height: 50px; border-radius: 50%;
-  border: 1px solid var(--color-border); background: var(--color-surface);
+  border: 1px solid var(--color-brand); background: var(--color-surface);
+  color: var(--color-brand);
   font-size: 1rem; font-weight: 600; cursor: pointer;
   display: flex; align-items: center; justify-content: center;
 }
-.size-btn:hover:not(.disabled) { border-color: var(--color-brand); color: var(--color-brand); }
-.size-btn.selected { border: 2px solid var(--color-brand); color: var(--color-brand); }
+.size-btn:hover:not(.disabled) { background: var(--color-brand-light-bg); }
+.size-btn.selected { border: 2px solid var(--color-brand); background: var(--color-brand); color: white; }
 .size-btn.disabled {
   color: #ccc; border-color: #eee; cursor: not-allowed;
   background: linear-gradient(to top right, transparent calc(50% - 1px), #ccc calc(50% - 1px), #ccc calc(50% + 1px), transparent calc(50% + 1px));
