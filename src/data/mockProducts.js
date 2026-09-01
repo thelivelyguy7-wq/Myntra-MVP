@@ -78,8 +78,8 @@ export const mockProducts = [
       fit: "Snug",
       delivery: "3 Days"
     },
-    decisionSignals: ["Great Value", "40% Off"],
-    aiEvidence: "These Puma slip-ons are an excellent value pick at 40% off. The mesh material offers breathability, making them perfect for light, everyday comfort on a budget.",
+    decisionSignals: ["Great Value"],
+    aiEvidence: "These Puma slip-ons are an excellent value pick. The mesh material offers breathability, making them perfect for light, everyday comfort on a budget.",
     aiTradeOffs: "Best value and highly breathable, but lower overall rating."
   },
   {
